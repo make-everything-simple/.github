@@ -1,0 +1,16 @@
+{
+    "name": "Android Framework Project Workflow",
+    "description": "General CI workflow template for the Android framework project.",
+    "iconName": "android-logo",
+    "categories": [
+        "Java",
+        "Kotlin",
+        "Gradle"
+    ],
+    "filePatterns": [
+        "gradle.properties",
+        "*.gradle",
+        "*.kt",
+        "*.java"
+    ]
+}

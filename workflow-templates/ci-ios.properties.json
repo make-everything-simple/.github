@@ -1,0 +1,13 @@
+{
+    "name": "iOS Application Workflow",
+    "description": "General CI workflow template to build an iOS Application.",
+    "iconName": "ios-logo",
+    "categories": [
+        "Swift"
+    ],
+    "filePatterns": [
+        "package.swift$",
+        "*.xcodeproj",
+        "*.swift$"
+    ]
+}

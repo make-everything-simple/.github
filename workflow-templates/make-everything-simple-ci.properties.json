@@ -1,0 +1,12 @@
+{
+    "name": "make-everything-simple Organization Workflow",
+    "description": "General CI workflow template.",
+    "iconName": "make-everything-simple",
+    "categories": [
+        "Go"
+    ],
+    "filePatterns": [
+        "package.json$",
+        "^Dockerfile*"
+    ]
+}
