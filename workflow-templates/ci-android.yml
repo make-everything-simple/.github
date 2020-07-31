@@ -32,5 +32,5 @@ jobs:
     # Perform Tasks
     - name: Clean and Build
       run: |
-      ./gradlew clean
-      ./gradlew build
+        ./gradlew clean
+        ./gradlew build

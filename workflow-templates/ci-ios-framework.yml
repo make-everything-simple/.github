@@ -32,6 +32,6 @@ jobs:
     - name: Xcode version
       run: /usr/bin/xcodebuild -version
       id: tool-version
-    # Perform Tasks
+    # Perform Tasks: add option `-workspace $PROJECT_NAME.xcworkspace` if you are using cocoapod
     - name: Cleand and Build
       run: xcodebuild -scheme ${{REPLACE_BY_YOUR_SCHEME}} clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11" ONLY_ACTIVE_ARCH=YES
