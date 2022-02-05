@@ -26,7 +26,7 @@ jobs:
       run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
     # Set up Required Environment
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_11.4.1.app
+      run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       id: tool-select
     # Show Info Xcode version
     - name: Xcode version
@@ -34,4 +34,4 @@ jobs:
       id: tool-version
     # Perform Tasks: add option `-workspace $PROJECT_NAME.xcworkspace` if you are using cocoapod
     - name: Cleand and Build
-      run: xcodebuild -scheme ${{REPLACE_BY_YOUR_SCHEME}} clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11" ONLY_ACTIVE_ARCH=YES
+      run: xcodebuild -scheme ${{REPLACE_BY_YOUR_SCHEME}} clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES
